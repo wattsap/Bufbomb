@@ -1,0 +1,30 @@
+getbuf:
+
+#define NORMAL_BUFFER_SIZE 32
+
+int getbuf()
+{
+    char buf[Normal_Buffer_Size];
+    Gets(buf);
+    return 1;
+}
+
+smoke address: 0x08049aa
+esp: 0x55683ca8
+ebp: 0x55683ce0
+ebp - esp = 0x38 or 56
+smoke: 0x080490aa
+
+bang addr: 0x08049012
+global val addr: 0x804c1e
+
+bang addr: 0x08049012
+global val addr: 0x0804c1ec
+
+place to insert exploit: 0x55683ce8
+
+first address: 0x55683ad8
+second addres: 0x55683a58
+third address: 0x55683a88
+fourt address: 0x55683b48
+fifth address: 0x55683c80
